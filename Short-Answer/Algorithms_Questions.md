@@ -10,6 +10,7 @@ a)  a = 0
     while (a < n * n * n):
       a = a + n * n
 ```
+ O(n)
 
 ```
 b)  sum = 0
@@ -23,6 +24,7 @@ b)  sum = 0
             l += 1
             sum += 1
 ```
+O(n^3) or n^3 as the inner loops run n times for each iteration of the outer loop
 
 ```
 c)  def bunnyEars(bunnies):
@@ -31,9 +33,20 @@ c)  def bunnyEars(bunnies):
 
       return 2 + bunnyEars(bunnies-1)
 ```
+O(n)
 
 ## Exercise II
 
 Suppose that you have an _n_-story building and plenty of eggs. Suppose also that an egg gets broken if it is thrown off floor _f_ or higher, and doesn't get broken if dropped off a floor less than floor _f_. Devise a strategy to determine the value of _f_ such that the number of dropped eggs is minimized.
 
 Write out your proposed algorithm in plain English or pseudocode and give the runtime complexity of your solution.
+
+_n_ = story
+_f_ = floor
+
+#some code goes here
+
+if _n_ >= _f_:
+  break egg
+elif _n_ < _f_:
+  unbroken egg
