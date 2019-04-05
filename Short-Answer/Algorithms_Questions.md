@@ -50,3 +50,5 @@ if _n_ >= _f_:
   break egg
 elif _n_ < _f_:
   unbroken egg
+
+Either sequence 1 or sequence 2 will execute, therefore the worst case time possible is O(n)
